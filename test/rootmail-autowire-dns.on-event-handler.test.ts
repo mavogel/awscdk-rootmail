@@ -21,8 +21,7 @@ jest.mock('@aws-sdk/client-route-53', () => ({
   Route53: spyRoute53,
 }));
 
-// eslint-disable-next-line import/no-unresolved
-import { OnEventRequest } from 'aws-cdk-lib/custom-resources/lib/provider-framework/types';
+import { OnEventRequest } from '../src/custom-resource-types';
 import { handler } from '../src/rootmail-autowire-dns.on-event-handler';
 
 describe('wire-rootmail-dns', () => {

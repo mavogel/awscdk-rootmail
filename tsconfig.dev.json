@@ -25,12 +25,8 @@
     "stripInternal": true,
     "target": "ES2020",
     "types": [
-      "aws-lambda",
-      "jest",
-      "jsonfile",
-      "mailparser",
       "node",
-      "uuid"
+      "jest"
     ]
   },
   "include": [

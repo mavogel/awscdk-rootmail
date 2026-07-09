@@ -1,5 +1,6 @@
 import { Route53 } from '@aws-sdk/client-route-53';
 import { SSM } from '@aws-sdk/client-ssm';
+import { OnEventRequest, OnEventResponse } from './custom-resource-types';
 export const PROP_DOMAIN = 'Domain';
 export const PROP_SUB_DOMAIN = 'Subdomain';
 export const PROP_PARENT_HOSTED_ZONE_ID = 'ParentHostedZoneId';
@@ -9,7 +10,7 @@ export const PROP_R53_CHANGEINFO_ID_PARAMETER_NAME = 'R53ChangeInfoIdParameterNa
 const route53 = new Route53();
 const ssm = new SSM();
 
-export async function handler(event: AWSCDKAsyncCustomResource.OnEventRequest): Promise<AWSCDKAsyncCustomResource.OnEventResponse> {
+export async function handler(event: OnEventRequest): Promise<OnEventResponse> {
   const domain = event.ResourceProperties[PROP_DOMAIN];
   // NOTE: this has to happen here as if we do this around the whole CR
   // it is not sythesized at all

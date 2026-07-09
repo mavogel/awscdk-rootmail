@@ -1,6 +1,5 @@
 import { SES } from '@aws-sdk/client-ses';
-// eslint-disable-next-line import/no-unresolved
-import * as AWSCDKAsyncCustomResource from 'aws-cdk-lib/custom-resources/lib/provider-framework/types';
+import { OnEventRequest } from './custom-resource-types';
 export const PROP_DOMAIN = 'Domain';
 
 const ses = new SES();
@@ -9,7 +8,7 @@ export interface IsCompleteHandlerResponse {
   IsComplete: boolean;
 }
 
-export async function handler(event: AWSCDKAsyncCustomResource.OnEventRequest): Promise<IsCompleteHandlerResponse> {
+export async function handler(event: OnEventRequest): Promise<IsCompleteHandlerResponse> {
   const domain = event.ResourceProperties[PROP_DOMAIN];
 
   switch (event.RequestType) {

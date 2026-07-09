@@ -1,6 +1,5 @@
 import { S3 } from '@aws-sdk/client-s3';
-// eslint-disable-next-line import/no-unresolved
-import * as AWSCDKAsyncCustomResource from 'aws-cdk-lib/custom-resources/lib/provider-framework/types';
+import { OnEventRequest } from './custom-resource-types';
 export const PROP_EMAILBUCKET_NAME = 'EmailBucketName';
 
 const fileKey = 'RootMail/AMAZON_SES_SETUP_NOTIFICATION';
@@ -11,7 +10,7 @@ export interface IsCompleteHandlerResponse {
   IsComplete: boolean;
 }
 
-export async function handler(event: AWSCDKAsyncCustomResource.OnEventRequest): Promise<IsCompleteHandlerResponse> {
+export async function handler(event: OnEventRequest): Promise<IsCompleteHandlerResponse> {
   const emailBucketName = event.ResourceProperties[PROP_EMAILBUCKET_NAME];
 
   switch (event.RequestType) {
