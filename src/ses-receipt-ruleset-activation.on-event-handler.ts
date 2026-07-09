@@ -1,6 +1,5 @@
 import { SES } from '@aws-sdk/client-ses';
-// eslint-disable-next-line import/no-unresolved
-import * as AWSCDKAsyncCustomResource from 'aws-cdk-lib/custom-resources/lib/provider-framework/types';
+import { OnEventRequest, OnEventResponse } from './custom-resource-types';
 export const PROP_DOMAIN = 'Domain';
 export const PROP_SUBDOMAIN = 'Subdomain';
 export const PROP_EMAILBUCKET_NAME = 'EmailBucketName';
@@ -10,7 +9,7 @@ export const FILTERED_EMAIL_SUBJECTS = 'FilteredEmailSubjects';
 
 const ses = new SES();
 
-export async function handler(event: AWSCDKAsyncCustomResource.OnEventRequest): Promise<AWSCDKAsyncCustomResource.OnEventResponse> {
+export async function handler(event: OnEventRequest): Promise<OnEventResponse> {
   const domain = event.ResourceProperties[PROP_DOMAIN];
   const subdomain = event.ResourceProperties[PROP_SUBDOMAIN];
   const emailBucketName = event.ResourceProperties[PROP_EMAILBUCKET_NAME];

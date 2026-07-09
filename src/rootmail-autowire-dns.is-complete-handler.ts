@@ -1,7 +1,6 @@
 import { Route53, waitUntilResourceRecordSetsChanged } from '@aws-sdk/client-route-53';
 import { SSM } from '@aws-sdk/client-ssm';
-// eslint-disable-next-line import/no-unresolved
-import * as AWSCDKAsyncCustomResource from 'aws-cdk-lib/custom-resources/lib/provider-framework/types';
+import { OnEventRequest } from './custom-resource-types';
 export const PROP_DOMAIN = 'Domain';
 export const PROP_SUB_DOMAIN = 'Subdomain';
 export const PROP_R53_HANGEINFO_ID_PARAMETER_NAME = 'R53ChangeInfoIdParameterName'; // TODO DRY with interface
@@ -14,7 +13,7 @@ export interface IsCompleteHandlerResponse {
   IsComplete: boolean;
 }
 
-export async function handler(event: AWSCDKAsyncCustomResource.OnEventRequest): Promise<IsCompleteHandlerResponse> {
+export async function handler(event: OnEventRequest): Promise<IsCompleteHandlerResponse> {
   const domain = event.ResourceProperties[PROP_DOMAIN];
   const subdomain = event.ResourceProperties[PROP_SUB_DOMAIN];
   const hostedZoneParameterName = event.ResourceProperties[PROP_R53_HANGEINFO_ID_PARAMETER_NAME];

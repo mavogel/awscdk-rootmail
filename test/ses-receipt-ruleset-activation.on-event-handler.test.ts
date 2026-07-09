@@ -15,8 +15,7 @@ jest.mock('@aws-sdk/client-ses', () => ({
   SES: spySES,
 }));
 
-// eslint-disable-next-line import/no-unresolved
-import { OnEventRequest } from 'aws-cdk-lib/custom-resources/lib/provider-framework/types';
+import { OnEventRequest } from '../src/custom-resource-types';
 import { handler } from '../src/ses-receipt-ruleset-activation.on-event-handler';
 
 describe('ses-receipt-ruleset-activation', () => {

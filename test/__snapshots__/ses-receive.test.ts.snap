@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`ses-receive-stack ses-receive-stack-create 1`] = `
 {
@@ -1461,7 +1461,7 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "16118163160c3a02f22fe18194234e03460558434370737e52e123729f0b81e5.zip",
+          "S3Key": "02c6255fbff7f38c697f1941c43745b0e6c01a6367b1c1fc13c740fccd90af13.zip",
         },
         "Environment": {
           "Variables": {
@@ -1666,7 +1666,7 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "ec26ce9e36fc1980bfdc8555685940c088d007a0f5ecfe7c82545b132cd717e3.zip",
+          "S3Key": "04b63a10c9d96a20967c5a347d6bfe913a2c32d244e0e8bf5509a2f9da29260f.zip",
         },
         "Environment": {
           "Variables": {

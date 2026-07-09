@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
 {
@@ -4620,7 +4620,7 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "16118163160c3a02f22fe18194234e03460558434370737e52e123729f0b81e5.zip",
+          "S3Key": "02c6255fbff7f38c697f1941c43745b0e6c01a6367b1c1fc13c740fccd90af13.zip",
         },
         "Environment": {
           "Variables": {
@@ -9328,7 +9328,7 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "16118163160c3a02f22fe18194234e03460558434370737e52e123729f0b81e5.zip",
+          "S3Key": "02c6255fbff7f38c697f1941c43745b0e6c01a6367b1c1fc13c740fccd90af13.zip",
         },
         "Environment": {
           "Variables": {
