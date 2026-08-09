@@ -10,6 +10,7 @@ const project = new MvcCdkConstructLibrary({
   jsiiVersion: '~5.9.0',
   name: '@mavogel/awscdk-rootmail',
   projenrcTs: true,
+  npmTrustedPublishing: true,
   repositoryUrl: 'https://github.com/mavogel/awscdk-rootmail',
   npmAccess: NpmAccess.PUBLIC, /* The npm access level to use when releasing this module. */
   packageManager: javascript.NodePackageManager.NPM,
