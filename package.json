@@ -3,7 +3,7 @@
   "description": "An opinionated way to secure root email addresses for AWS accounts.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MV-Consulting/awscdk-rootmail"
+    "url": "https://github.com/mavogel/awscdk-rootmail"
   },
   "scripts": {
     "build": "projen build",
