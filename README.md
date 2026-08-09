@@ -32,7 +32,7 @@ Feel free to take a look at the design
 
 Install the dependencies:
 ```sh
-brew install aws-cli node@18 esbuild
+brew install aws-cli node@24 esbuild
 ```
 
 You can chose via embedding the construct in your cdk-app or use is directly via Cloudformation.
