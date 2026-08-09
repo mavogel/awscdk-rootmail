@@ -41,7 +41,7 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
@@ -102,20 +102,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "AWS::IAM::Policy",
     },
     "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleA5C4F5B4": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -147,20 +133,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleDefaultPolicy92E90A6D": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -192,24 +164,10 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
         "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleDefaultPolicy8A8828E7",
         "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleCFD6EE46",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - isComplete (testStack/rootmail.ses-receipt-ruleset-activation-provider/ses-receipt-ruleset-activation-provider)",
         "Environment": {
@@ -239,26 +197,12 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteLogRetention13DDD3A2": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -282,20 +226,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleCFD6EE46": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -327,20 +257,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleDefaultPolicy8A8828E7": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -433,24 +349,10 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
         "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleDefaultPolicy11FA01A0",
         "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleB5050EE6",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (testStack/rootmail.ses-receipt-ruleset-activation-provider/ses-receipt-ruleset-activation-provider)",
         "Environment": {
@@ -483,26 +385,12 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonEventLogRetentionA6742D46": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -526,20 +414,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleB5050EE6": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -571,20 +445,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleDefaultPolicy11FA01A0": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -684,24 +544,10 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
         "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRoleDefaultPolicy8A4A1F2A",
         "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRole845C2519",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onTimeout (testStack/rootmail.ses-receipt-ruleset-activation-provider/ses-receipt-ruleset-activation-provider)",
         "Environment": {
@@ -731,26 +577,12 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutLogRetention5763AF42": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -774,20 +606,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRole845C2519": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -819,20 +637,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRoleDefaultPolicy8A4A1F2A": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -925,24 +729,10 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
         "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRoleDefaultPolicyFB99DF60",
         "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRole9D6CAFC0",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "7144c5a47b3904b1aa4b27be73803a4b684f4ef765d9df8fa767779d37106254.zip",
+          "S3Key": "78b64aaf9aebb4eacbdd42197be10e9d5894360a642f7dcf79aeb84bb3552377.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -957,20 +747,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationprovideriscompletehandlerLogRetention03F74C63": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -994,20 +770,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRole9D6CAFC0": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -1039,20 +801,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRoleDefaultPolicyFB99DF60": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -1103,24 +851,10 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
         "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleDefaultPolicy92E90A6D",
         "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleA5C4F5B4",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "9709438d0fbb508ea9bfee8683a274b4f9492f5e527eb28e0bd9e2bc96b9a08f.zip",
+          "S3Key": "be7d56b509650f7f97c406a745d8335992726086995e4cb4aaf50417ab40e803.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -1135,20 +869,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationprovideroneventhandlerLogRetentionFD6A9185": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -1176,20 +896,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
         "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRoleDefaultPolicy64767BAC",
         "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRole069EB2EA",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "DefinitionString": {
           "Fn::Join": [
@@ -1223,20 +929,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "AWS::StepFunctions::StateMachine",
     },
     "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRole069EB2EA": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -1254,20 +946,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRoleDefaultPolicy64767BAC": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -1336,20 +1014,6 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Type": "AWS::IAM::Policy",
     },
     "testSesReceiveOpsSantaFunctionRoleE4ADD3F6": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok as we allow every opsitem to be created",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -1461,7 +1125,7 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "02c6255fbff7f38c697f1941c43745b0e6c01a6367b1c1fc13c740fccd90af13.zip",
+          "S3Key": "c230c2016460571997768062e1b186b36b3d9a636a78efd39e3c228dacbcf811.zip",
         },
         "Environment": {
           "Variables": {
@@ -1599,7 +1263,7 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
@@ -1666,7 +1330,7 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "04b63a10c9d96a20967c5a347d6bfe913a2c32d244e0e8bf5509a2f9da29260f.zip",
+          "S3Key": "a9c29887e561695d9c652913b783b1ad1afa132860163b99766283574b7fc288.zip",
         },
         "Environment": {
           "Variables": {
@@ -1762,20 +1426,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleA5C4F5B4": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -1807,20 +1457,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleDefaultPolicy92E90A6D": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -1852,24 +1488,10 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
         "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleDefaultPolicy8A8828E7",
         "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleCFD6EE46",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - isComplete (testStack/rootmail.ses-receipt-ruleset-activation-provider/ses-receipt-ruleset-activation-provider)",
         "Environment": {
@@ -1899,26 +1521,12 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteLogRetention13DDD3A2": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -1942,20 +1550,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleCFD6EE46": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -1987,20 +1581,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleDefaultPolicy8A8828E7": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -2093,24 +1673,10 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
         "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleDefaultPolicy11FA01A0",
         "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleB5050EE6",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (testStack/rootmail.ses-receipt-ruleset-activation-provider/ses-receipt-ruleset-activation-provider)",
         "Environment": {
@@ -2143,26 +1709,12 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonEventLogRetentionA6742D46": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -2186,20 +1738,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleB5050EE6": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -2231,20 +1769,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleDefaultPolicy11FA01A0": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -2344,24 +1868,10 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
         "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRoleDefaultPolicy8A4A1F2A",
         "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRole845C2519",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onTimeout (testStack/rootmail.ses-receipt-ruleset-activation-provider/ses-receipt-ruleset-activation-provider)",
         "Environment": {
@@ -2391,26 +1901,12 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutLogRetention5763AF42": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -2434,20 +1930,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRole845C2519": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -2479,20 +1961,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRoleDefaultPolicy8A4A1F2A": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -2585,24 +2053,10 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
         "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRoleDefaultPolicyFB99DF60",
         "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRole9D6CAFC0",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "7144c5a47b3904b1aa4b27be73803a4b684f4ef765d9df8fa767779d37106254.zip",
+          "S3Key": "78b64aaf9aebb4eacbdd42197be10e9d5894360a642f7dcf79aeb84bb3552377.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -2617,20 +2071,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationprovideriscompletehandlerLogRetention03F74C63": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -2654,20 +2094,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRole9D6CAFC0": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -2699,20 +2125,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRoleDefaultPolicyFB99DF60": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -2763,24 +2175,10 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
         "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleDefaultPolicy92E90A6D",
         "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleA5C4F5B4",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "9709438d0fbb508ea9bfee8683a274b4f9492f5e527eb28e0bd9e2bc96b9a08f.zip",
+          "S3Key": "be7d56b509650f7f97c406a745d8335992726086995e4cb4aaf50417ab40e803.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -2795,20 +2193,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationprovideroneventhandlerLogRetentionFD6A9185": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -2836,20 +2220,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
         "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRoleDefaultPolicy64767BAC",
         "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRole069EB2EA",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "DefinitionString": {
           "Fn::Join": [
@@ -2883,20 +2253,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "AWS::StepFunctions::StateMachine",
     },
     "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRole069EB2EA": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -2914,20 +2270,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRoleDefaultPolicy64767BAC": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -3030,20 +2372,6 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Type": "AWS::IAM::Policy",
     },
     "testSesReceiveCustomFuncOpsSantaFunctionRole0ED917A3": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok as we allow every opsitem to be created",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [

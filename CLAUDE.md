@@ -128,7 +128,7 @@ SES is not available in all regions. The construct validates deployment regions 
 - All resources follow AWS Well-Architected Framework principles
 - S3 buckets have public access blocked and encryption enabled
 - IAM policies follow principle of least privilege
-- CDK Nag suppressions documented with justifications
+- CDK Nag findings acknowledged via `Validations.of(construct).acknowledge({ id, reason })` (cdk-nag v3), documented with justifications
 
 ## Important Notes
 

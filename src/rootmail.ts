@@ -10,8 +10,8 @@ import {
   IAspect,
   RemovalPolicy,
   Aspects,
+  Validations,
 } from 'aws-cdk-lib';
-import { NagSuppressions } from 'cdk-nag';
 import { Construct, IConstruct } from 'constructs';
 import { isSESEnabledRegion, sesEnabledRegions } from './common';
 import { HostedZoneDkim } from './hosted-zone-dkim';
@@ -120,19 +120,11 @@ export class Rootmail extends Construct {
       removalPolicy: emailBucketDeletePolicy,
       autoDeleteObjects: emailBucketDeletePolicy === RemovalPolicy.DESTROY,
     });
-    NagSuppressions.addResourceSuppressions([
-      this.emailBucket,
-    ], [
-      { id: 'AwsSolutions-S1', reason: 'no server access logs needed' },
-      { id: 'AwsSolutions-S10', reason: 'no SSL access needed' },
-    ], true);
+    Validations.of(this.emailBucket).acknowledge({ id: 'AwsSolutions-S1', reason: 'no server access logs needed' });
+    Validations.of(this.emailBucket).acknowledge({ id: 'AwsSolutions-S10', reason: 'no SSL access needed' });
     this.emailBucket.grantPut(new iam.ServicePrincipal('ses.amazonaws.com'), 'RootMail/*');
 
-    NagSuppressions.addResourceSuppressions([
-      this.emailBucket.policy!,
-    ], [
-      { id: 'AwsSolutions-S10', reason: 'no SSL access needed' },
-    ], true);
+    Validations.of(this.emailBucket.policy!).acknowledge({ id: 'AwsSolutions-S10', reason: 'no SSL access needed' });
 
     /**
      * HOSTED ZONE

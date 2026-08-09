@@ -2,12 +2,12 @@
   "dependencies": [
     {
       "name": "@aws-cdk/integ-runner",
-      "version": "2.197.12",
+      "version": "2.203.0",
       "type": "build"
     },
     {
       "name": "@aws-cdk/integ-tests-alpha",
-      "version": "2.243.0-alpha.0",
+      "version": "2.263.0-alpha.0",
       "type": "build"
     },
     {
@@ -62,7 +62,7 @@
     },
     {
       "name": "awslint",
-      "version": "2.243.0-alpha.0",
+      "version": "2.263.0-alpha.0",
       "type": "build"
     },
     {
@@ -94,7 +94,7 @@
     },
     {
       "name": "jest-junit",
-      "version": "^16",
+      "version": "^17",
       "type": "build"
     },
     {
@@ -138,6 +138,7 @@
     },
     {
       "name": "typescript",
+      "version": "^6.0.2",
       "type": "build"
     },
     {
@@ -174,7 +175,7 @@
     },
     {
       "name": "aws-cdk-lib",
-      "version": "^2.243.0",
+      "version": "^2.263.0",
       "type": "peer"
     },
     {
@@ -188,12 +189,12 @@
     },
     {
       "name": "cdk-nag",
-      "version": "^2.37.55",
+      "version": "^3.0.1",
       "type": "runtime"
     },
     {
       "name": "constructs",
-      "version": "^10.4.2",
+      "version": "^10.5.1",
       "type": "runtime"
     }
   ],

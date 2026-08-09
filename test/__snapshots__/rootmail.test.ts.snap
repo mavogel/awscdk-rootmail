@@ -27,7 +27,7 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
@@ -92,24 +92,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailautowirednsprovideriscompletehandlerServiceRoleDefaultPolicy7DA8ECD2",
         "rootmailautowirednsprovideriscompletehandlerServiceRole35CABB06",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "409d1db869dd0ed635bff94c855031afc92e9ac918a5d09651dd0b5316db1433.zip",
+          "S3Key": "157ba1713f7224463b621261792d18081588ff306a9bc3f75e6c468fabbe1a60.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -124,20 +110,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailautowirednsprovideriscompletehandlerLogRetention304C1822": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -161,20 +133,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailautowirednsprovideriscompletehandlerServiceRole35CABB06": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -206,20 +164,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailautowirednsprovideriscompletehandlerServiceRoleDefaultPolicy7DA8ECD2": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -272,24 +216,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailautowirednsprovideroneventhandlerServiceRoleDefaultPolicy4A5BBAB1",
         "rootmailautowirednsprovideroneventhandlerServiceRole6D9F81B0",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "aca912f8a6aebc5dfd423aff79785b8fd7488473a4cf93aaa7ad0e442b548787.zip",
+          "S3Key": "4c079063901e6478dbb5ace19e3123641ebf0da2ab648ecf52079c5bec154196.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -304,20 +234,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailautowirednsprovideroneventhandlerLogRetentionA4DB1AD5": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -341,20 +257,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailautowirednsprovideroneventhandlerServiceRole6D9F81B0": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -386,20 +288,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailautowirednsprovideroneventhandlerServiceRoleDefaultPolicy4A5BBAB1": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -479,24 +367,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailautowirednsproviderrootmailautowirednsproviderframeworkisCompleteServiceRoleDefaultPolicy5728F288",
         "rootmailautowirednsproviderrootmailautowirednsproviderframeworkisCompleteServiceRoleD15A96AC",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - isComplete (testStack/rootmail.autowire-dns-provider/rootmail-autowire-dns-provider)",
         "Environment": {
@@ -526,26 +400,12 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkisCompleteLogRetentionB48EA66E": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -569,20 +429,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkisCompleteServiceRoleD15A96AC": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -614,20 +460,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkisCompleteServiceRoleDefaultPolicy5728F288": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -720,24 +552,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonEventServiceRoleDefaultPolicy16D799D5",
         "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonEventServiceRoleECC96780",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (testStack/rootmail.autowire-dns-provider/rootmail-autowire-dns-provider)",
         "Environment": {
@@ -770,26 +588,12 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonEventLogRetention06222B6A": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -813,20 +617,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonEventServiceRoleDefaultPolicy16D799D5": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -922,20 +712,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Policy",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonEventServiceRoleECC96780": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -971,24 +747,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonTimeoutServiceRoleDefaultPolicy53D3B624",
         "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonTimeoutServiceRole4383D224",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onTimeout (testStack/rootmail.autowire-dns-provider/rootmail-autowire-dns-provider)",
         "Environment": {
@@ -1018,26 +780,12 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonTimeoutLogRetention59C14E50": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -1061,20 +809,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonTimeoutServiceRole4383D224": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -1106,20 +840,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonTimeoutServiceRoleDefaultPolicy53D3B624": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -1212,20 +932,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailautowirednsproviderrootmailautowirednsproviderwaiterstatemachineRoleDefaultPolicy310226B4",
         "rootmailautowirednsproviderrootmailautowirednsproviderwaiterstatemachineRole258A7061",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "DefinitionString": {
           "Fn::Join": [
@@ -1259,20 +965,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::StepFunctions::StateMachine",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderwaiterstatemachineRole258A7061": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -1290,20 +982,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderwaiterstatemachineRoleDefaultPolicy310226B4": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -1376,24 +1054,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimpropagationproviderframeworkisCompleteServiceRoleDefaultPolicy02D0AEA6",
         "rootmailhostedzonedkimpropagationproviderframeworkisCompleteServiceRole9BABA5E5",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - isComplete (testStack/rootmail.hosted-zone-dkim-propagation-provider/hosted-zone-dkim-propagation-provider)",
         "Environment": {
@@ -1423,26 +1087,12 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkisCompleteLogRetentionF6AB8959": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -1466,20 +1116,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkisCompleteServiceRole9BABA5E5": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -1511,20 +1147,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkisCompleteServiceRoleDefaultPolicy02D0AEA6": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -1617,24 +1239,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimpropagationproviderframeworkonEventServiceRoleDefaultPolicy68675555",
         "rootmailhostedzonedkimpropagationproviderframeworkonEventServiceRole5729BE95",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (testStack/rootmail.hosted-zone-dkim-propagation-provider/hosted-zone-dkim-propagation-provider)",
         "Environment": {
@@ -1667,26 +1275,12 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkonEventLogRetention39EDE52F": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -1710,20 +1304,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkonEventServiceRole5729BE95": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -1755,20 +1335,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkonEventServiceRoleDefaultPolicy68675555": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -1868,24 +1434,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimpropagationproviderframeworkonTimeoutServiceRoleDefaultPolicy2FF6168E",
         "rootmailhostedzonedkimpropagationproviderframeworkonTimeoutServiceRoleB169BF13",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onTimeout (testStack/rootmail.hosted-zone-dkim-propagation-provider/hosted-zone-dkim-propagation-provider)",
         "Environment": {
@@ -1915,26 +1467,12 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkonTimeoutLogRetentionB2967E04": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -1958,20 +1496,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkonTimeoutServiceRoleB169BF13": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -2003,20 +1527,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkonTimeoutServiceRoleDefaultPolicy2FF6168E": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -2109,24 +1619,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimpropagationprovideriscompletehandlerServiceRoleDefaultPolicy57D46916",
         "rootmailhostedzonedkimpropagationprovideriscompletehandlerServiceRoleDFD2C35E",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "f61472ea141af20f69ebb7a7718158fcb95d72410c0c2a2e72cc59b1822873fc.zip",
+          "S3Key": "7e8a681794eff5fda1841caa360113df5488ecf944055a69b8f1e5a687e269f5.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -2141,20 +1637,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimpropagationprovideriscompletehandlerLogRetentionA997105A": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -2178,20 +1660,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimpropagationprovideriscompletehandlerServiceRoleDFD2C35E": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -2223,20 +1691,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimpropagationprovideriscompletehandlerServiceRoleDefaultPolicy57D46916": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -2266,24 +1720,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "DependsOn": [
         "rootmailhostedzonedkimpropagationprovideroneventhandlerServiceRole02FD73CE",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "11768574bbd12c5ed10f463a68797423c366b61535ebc1b14951661b92657fa5.zip",
+          "S3Key": "9572b451243318765beb576ae7528096b3879783dbaab795c02c01d7f4e83438.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -2298,20 +1738,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimpropagationprovideroneventhandlerLogRetentionD97E8A18": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -2335,20 +1761,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimpropagationprovideroneventhandlerServiceRole02FD73CE": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -2384,20 +1796,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimpropagationproviderwaiterstatemachineRoleDefaultPolicy70368CA0",
         "rootmailhostedzonedkimpropagationproviderwaiterstatemachineRole40906579",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "DefinitionString": {
           "Fn::Join": [
@@ -2431,20 +1829,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::StepFunctions::StateMachine",
     },
     "rootmailhostedzonedkimpropagationproviderwaiterstatemachineRole40906579": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -2462,20 +1846,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimpropagationproviderwaiterstatemachineRoleDefaultPolicy70368CA0": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -2548,24 +1918,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimverificationrecordsproviderframeworkonEventServiceRoleDefaultPolicy2775D1BA",
         "rootmailhostedzonedkimverificationrecordsproviderframeworkonEventServiceRoleA09812EA",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (testStack/rootmail.hosted-zone-dkim-verification-records-provider/hosted-zone-dkim-verification-records-provider)",
         "Environment": {
@@ -2589,26 +1945,12 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimverificationrecordsproviderframeworkonEventLogRetention64AEF97C": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -2632,20 +1974,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimverificationrecordsproviderframeworkonEventServiceRoleA09812EA": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -2677,20 +2005,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimverificationrecordsproviderframeworkonEventServiceRoleDefaultPolicy2775D1BA": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -2747,24 +2061,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimverificationrecordsprovideroneventhandlerServiceRoleDefaultPolicy5C0E86C8",
         "rootmailhostedzonedkimverificationrecordsprovideroneventhandlerServiceRole83E5B139",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "11281c9e2a2b601c3421513ba7c9be4b643b04ba6a934192e52e46def7ab0830.zip",
+          "S3Key": "f75274dd7677b6ef41f29d2dfc2c885b4f4e069d3fb8e67636bd89efd3f0fcad.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -2779,20 +2079,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimverificationrecordsprovideroneventhandlerLogRetentionCA165FC4": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -2816,20 +2102,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimverificationrecordsprovideroneventhandlerServiceRole83E5B139": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -2861,20 +2133,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimverificationrecordsprovideroneventhandlerServiceRoleDefaultPolicy5C0E86C8": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -2900,20 +2158,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Policy",
     },
     "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleA5C4F5B4": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -2945,20 +2189,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleDefaultPolicy92E90A6D": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -2990,24 +2220,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleDefaultPolicy8A8828E7",
         "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleCFD6EE46",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - isComplete (testStack/rootmail.ses-receipt-ruleset-activation-provider/ses-receipt-ruleset-activation-provider)",
         "Environment": {
@@ -3037,26 +2253,12 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteLogRetention13DDD3A2": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -3080,20 +2282,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleCFD6EE46": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -3125,20 +2313,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleDefaultPolicy8A8828E7": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -3231,24 +2405,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleDefaultPolicy11FA01A0",
         "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleB5050EE6",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (testStack/rootmail.ses-receipt-ruleset-activation-provider/ses-receipt-ruleset-activation-provider)",
         "Environment": {
@@ -3281,26 +2441,12 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonEventLogRetentionA6742D46": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -3324,20 +2470,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleB5050EE6": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -3369,20 +2501,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleDefaultPolicy11FA01A0": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -3482,24 +2600,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRoleDefaultPolicy8A4A1F2A",
         "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRole845C2519",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onTimeout (testStack/rootmail.ses-receipt-ruleset-activation-provider/ses-receipt-ruleset-activation-provider)",
         "Environment": {
@@ -3529,26 +2633,12 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutLogRetention5763AF42": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -3572,20 +2662,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRole845C2519": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -3617,20 +2693,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRoleDefaultPolicy8A4A1F2A": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -3723,24 +2785,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRoleDefaultPolicyFB99DF60",
         "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRole9D6CAFC0",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "7144c5a47b3904b1aa4b27be73803a4b684f4ef765d9df8fa767779d37106254.zip",
+          "S3Key": "78b64aaf9aebb4eacbdd42197be10e9d5894360a642f7dcf79aeb84bb3552377.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -3755,20 +2803,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationprovideriscompletehandlerLogRetention03F74C63": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -3792,20 +2826,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRole9D6CAFC0": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -3837,20 +2857,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRoleDefaultPolicyFB99DF60": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -3901,24 +2907,10 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleDefaultPolicy92E90A6D",
         "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleA5C4F5B4",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "9709438d0fbb508ea9bfee8683a274b4f9492f5e527eb28e0bd9e2bc96b9a08f.zip",
+          "S3Key": "be7d56b509650f7f97c406a745d8335992726086995e4cb4aaf50417ab40e803.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -3933,20 +2925,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationprovideroneventhandlerLogRetentionFD6A9185": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -3974,20 +2952,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
         "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRoleDefaultPolicy64767BAC",
         "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRole069EB2EA",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "DefinitionString": {
           "Fn::Join": [
@@ -4021,20 +2985,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::StepFunctions::StateMachine",
     },
     "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRole069EB2EA": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -4052,20 +3002,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRoleDefaultPolicy64767BAC": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -4135,20 +3071,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
     },
     "testRootmailEmailBucket2A470446": {
       "DeletionPolicy": "Retain",
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-S1",
-              "reason": "no server access logs needed",
-            },
-            {
-              "id": "AwsSolutions-S10",
-              "reason": "no SSL access needed",
-            },
-          ],
-        },
-      },
       "Properties": {
         "BucketEncryption": {
           "ServerSideEncryptionConfiguration": [
@@ -4170,16 +3092,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "UpdateReplacePolicy": "Retain",
     },
     "testRootmailEmailBucketPolicy5DA39984": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-S10",
-              "reason": "no SSL access needed",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Bucket": {
           "Ref": "testRootmailEmailBucket2A470446",
@@ -4495,20 +3407,6 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Type": "AWS::SSM::Parameter",
     },
     "testRootmailSESReceiveOpsSantaFunctionRole82D7297F": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok as we allow every opsitem to be created",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -4620,7 +3518,7 @@ exports[`rootmail-autoDns rootmail-create-with-autoDNSEnable 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "02c6255fbff7f38c697f1941c43745b0e6c01a6367b1c1fc13c740fccd90af13.zip",
+          "S3Key": "c230c2016460571997768062e1b186b36b3d9a636a78efd39e3c228dacbcf811.zip",
         },
         "Environment": {
           "Variables": {
@@ -4744,7 +3642,7 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
@@ -4809,24 +3707,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailautowirednsprovideriscompletehandlerServiceRoleDefaultPolicy7DA8ECD2",
         "rootmailautowirednsprovideriscompletehandlerServiceRole35CABB06",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "409d1db869dd0ed635bff94c855031afc92e9ac918a5d09651dd0b5316db1433.zip",
+          "S3Key": "157ba1713f7224463b621261792d18081588ff306a9bc3f75e6c468fabbe1a60.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -4841,20 +3725,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailautowirednsprovideriscompletehandlerLogRetention304C1822": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -4878,20 +3748,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailautowirednsprovideriscompletehandlerServiceRole35CABB06": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -4923,20 +3779,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailautowirednsprovideriscompletehandlerServiceRoleDefaultPolicy7DA8ECD2": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -4989,24 +3831,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailautowirednsprovideroneventhandlerServiceRoleDefaultPolicy4A5BBAB1",
         "rootmailautowirednsprovideroneventhandlerServiceRole6D9F81B0",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "aca912f8a6aebc5dfd423aff79785b8fd7488473a4cf93aaa7ad0e442b548787.zip",
+          "S3Key": "4c079063901e6478dbb5ace19e3123641ebf0da2ab648ecf52079c5bec154196.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -5021,20 +3849,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailautowirednsprovideroneventhandlerLogRetentionA4DB1AD5": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -5058,20 +3872,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailautowirednsprovideroneventhandlerServiceRole6D9F81B0": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -5103,20 +3903,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailautowirednsprovideroneventhandlerServiceRoleDefaultPolicy4A5BBAB1": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -5188,24 +3974,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailautowirednsproviderrootmailautowirednsproviderframeworkisCompleteServiceRoleDefaultPolicy5728F288",
         "rootmailautowirednsproviderrootmailautowirednsproviderframeworkisCompleteServiceRoleD15A96AC",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - isComplete (testStack/rootmail.autowire-dns-provider/rootmail-autowire-dns-provider)",
         "Environment": {
@@ -5235,26 +4007,12 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkisCompleteLogRetentionB48EA66E": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -5278,20 +4036,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkisCompleteServiceRoleD15A96AC": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -5323,20 +4067,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkisCompleteServiceRoleDefaultPolicy5728F288": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -5429,24 +4159,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonEventServiceRoleDefaultPolicy16D799D5",
         "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonEventServiceRoleECC96780",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (testStack/rootmail.autowire-dns-provider/rootmail-autowire-dns-provider)",
         "Environment": {
@@ -5479,26 +4195,12 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonEventLogRetention06222B6A": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -5522,20 +4224,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonEventServiceRoleDefaultPolicy16D799D5": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -5631,20 +4319,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Policy",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonEventServiceRoleECC96780": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -5680,24 +4354,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonTimeoutServiceRoleDefaultPolicy53D3B624",
         "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonTimeoutServiceRole4383D224",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onTimeout (testStack/rootmail.autowire-dns-provider/rootmail-autowire-dns-provider)",
         "Environment": {
@@ -5727,26 +4387,12 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonTimeoutLogRetention59C14E50": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -5770,20 +4416,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonTimeoutServiceRole4383D224": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -5815,20 +4447,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderframeworkonTimeoutServiceRoleDefaultPolicy53D3B624": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -5921,20 +4539,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailautowirednsproviderrootmailautowirednsproviderwaiterstatemachineRoleDefaultPolicy310226B4",
         "rootmailautowirednsproviderrootmailautowirednsproviderwaiterstatemachineRole258A7061",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "DefinitionString": {
           "Fn::Join": [
@@ -5968,20 +4572,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::StepFunctions::StateMachine",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderwaiterstatemachineRole258A7061": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -5999,20 +4589,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailautowirednsproviderrootmailautowirednsproviderwaiterstatemachineRoleDefaultPolicy310226B4": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -6085,24 +4661,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimpropagationproviderframeworkisCompleteServiceRoleDefaultPolicy02D0AEA6",
         "rootmailhostedzonedkimpropagationproviderframeworkisCompleteServiceRole9BABA5E5",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - isComplete (testStack/rootmail.hosted-zone-dkim-propagation-provider/hosted-zone-dkim-propagation-provider)",
         "Environment": {
@@ -6132,26 +4694,12 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkisCompleteLogRetentionF6AB8959": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -6175,20 +4723,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkisCompleteServiceRole9BABA5E5": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -6220,20 +4754,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkisCompleteServiceRoleDefaultPolicy02D0AEA6": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -6326,24 +4846,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimpropagationproviderframeworkonEventServiceRoleDefaultPolicy68675555",
         "rootmailhostedzonedkimpropagationproviderframeworkonEventServiceRole5729BE95",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (testStack/rootmail.hosted-zone-dkim-propagation-provider/hosted-zone-dkim-propagation-provider)",
         "Environment": {
@@ -6376,26 +4882,12 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkonEventLogRetention39EDE52F": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -6419,20 +4911,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkonEventServiceRole5729BE95": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -6464,20 +4942,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkonEventServiceRoleDefaultPolicy68675555": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -6577,24 +5041,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimpropagationproviderframeworkonTimeoutServiceRoleDefaultPolicy2FF6168E",
         "rootmailhostedzonedkimpropagationproviderframeworkonTimeoutServiceRoleB169BF13",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onTimeout (testStack/rootmail.hosted-zone-dkim-propagation-provider/hosted-zone-dkim-propagation-provider)",
         "Environment": {
@@ -6624,26 +5074,12 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkonTimeoutLogRetentionB2967E04": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -6667,20 +5103,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkonTimeoutServiceRoleB169BF13": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -6712,20 +5134,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimpropagationproviderframeworkonTimeoutServiceRoleDefaultPolicy2FF6168E": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -6818,24 +5226,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimpropagationprovideriscompletehandlerServiceRoleDefaultPolicy57D46916",
         "rootmailhostedzonedkimpropagationprovideriscompletehandlerServiceRoleDFD2C35E",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "f61472ea141af20f69ebb7a7718158fcb95d72410c0c2a2e72cc59b1822873fc.zip",
+          "S3Key": "7e8a681794eff5fda1841caa360113df5488ecf944055a69b8f1e5a687e269f5.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -6850,20 +5244,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimpropagationprovideriscompletehandlerLogRetentionA997105A": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -6887,20 +5267,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimpropagationprovideriscompletehandlerServiceRoleDFD2C35E": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -6932,20 +5298,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimpropagationprovideriscompletehandlerServiceRoleDefaultPolicy57D46916": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -6975,24 +5327,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "DependsOn": [
         "rootmailhostedzonedkimpropagationprovideroneventhandlerServiceRole02FD73CE",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "11768574bbd12c5ed10f463a68797423c366b61535ebc1b14951661b92657fa5.zip",
+          "S3Key": "9572b451243318765beb576ae7528096b3879783dbaab795c02c01d7f4e83438.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -7007,20 +5345,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimpropagationprovideroneventhandlerLogRetentionD97E8A18": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -7044,20 +5368,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimpropagationprovideroneventhandlerServiceRole02FD73CE": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -7093,20 +5403,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimpropagationproviderwaiterstatemachineRoleDefaultPolicy70368CA0",
         "rootmailhostedzonedkimpropagationproviderwaiterstatemachineRole40906579",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "DefinitionString": {
           "Fn::Join": [
@@ -7140,20 +5436,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::StepFunctions::StateMachine",
     },
     "rootmailhostedzonedkimpropagationproviderwaiterstatemachineRole40906579": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -7171,20 +5453,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimpropagationproviderwaiterstatemachineRoleDefaultPolicy70368CA0": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -7257,24 +5525,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimverificationrecordsproviderframeworkonEventServiceRoleDefaultPolicy2775D1BA",
         "rootmailhostedzonedkimverificationrecordsproviderframeworkonEventServiceRoleA09812EA",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (testStack/rootmail.hosted-zone-dkim-verification-records-provider/hosted-zone-dkim-verification-records-provider)",
         "Environment": {
@@ -7298,26 +5552,12 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimverificationrecordsproviderframeworkonEventLogRetention64AEF97C": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -7341,20 +5581,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimverificationrecordsproviderframeworkonEventServiceRoleA09812EA": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -7386,20 +5612,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimverificationrecordsproviderframeworkonEventServiceRoleDefaultPolicy2775D1BA": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -7456,24 +5668,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailhostedzonedkimverificationrecordsprovideroneventhandlerServiceRoleDefaultPolicy5C0E86C8",
         "rootmailhostedzonedkimverificationrecordsprovideroneventhandlerServiceRole83E5B139",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "11281c9e2a2b601c3421513ba7c9be4b643b04ba6a934192e52e46def7ab0830.zip",
+          "S3Key": "f75274dd7677b6ef41f29d2dfc2c885b4f4e069d3fb8e67636bd89efd3f0fcad.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -7488,20 +5686,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailhostedzonedkimverificationrecordsprovideroneventhandlerLogRetentionCA165FC4": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -7525,20 +5709,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailhostedzonedkimverificationrecordsprovideroneventhandlerServiceRole83E5B139": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -7570,20 +5740,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailhostedzonedkimverificationrecordsprovideroneventhandlerServiceRoleDefaultPolicy5C0E86C8": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -7609,20 +5765,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Policy",
     },
     "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleA5C4F5B4": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -7654,20 +5796,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleDefaultPolicy92E90A6D": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -7699,24 +5827,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleDefaultPolicy8A8828E7",
         "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleCFD6EE46",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - isComplete (testStack/rootmail.ses-receipt-ruleset-activation-provider/ses-receipt-ruleset-activation-provider)",
         "Environment": {
@@ -7746,26 +5860,12 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteLogRetention13DDD3A2": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -7789,20 +5889,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleCFD6EE46": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -7834,20 +5920,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkisCompleteServiceRoleDefaultPolicy8A8828E7": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -7940,24 +6012,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleDefaultPolicy11FA01A0",
         "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleB5050EE6",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (testStack/rootmail.ses-receipt-ruleset-activation-provider/ses-receipt-ruleset-activation-provider)",
         "Environment": {
@@ -7990,26 +6048,12 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonEventLogRetentionA6742D46": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -8033,20 +6077,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleB5050EE6": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -8078,20 +6108,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonEventServiceRoleDefaultPolicy11FA01A0": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -8191,24 +6207,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRoleDefaultPolicy8A4A1F2A",
         "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRole845C2519",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "e16ffb3b34af185b8b30c88fdb19faa13b6c42bb38580485c4e84b384ee48b63.zip",
         },
         "Description": "AWS CDK resource provider framework - onTimeout (testStack/rootmail.ses-receipt-ruleset-activation-provider/ses-receipt-ruleset-activation-provider)",
         "Environment": {
@@ -8238,26 +6240,12 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutLogRetention5763AF42": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -8281,20 +6269,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRole845C2519": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -8326,20 +6300,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderframeworkonTimeoutServiceRoleDefaultPolicy8A4A1F2A": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -8432,24 +6392,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRoleDefaultPolicyFB99DF60",
         "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRole9D6CAFC0",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "7144c5a47b3904b1aa4b27be73803a4b684f4ef765d9df8fa767779d37106254.zip",
+          "S3Key": "78b64aaf9aebb4eacbdd42197be10e9d5894360a642f7dcf79aeb84bb3552377.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -8464,20 +6410,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationprovideriscompletehandlerLogRetention03F74C63": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -8501,20 +6433,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "Custom::LogRetention",
     },
     "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRole9D6CAFC0": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -8546,20 +6464,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationprovideriscompletehandlerServiceRoleDefaultPolicyFB99DF60": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -8610,24 +6514,10 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleDefaultPolicy92E90A6D",
         "rootmailsesreceiptrulesetactivationproviderSesReceiptRuleSetActivationCustomResourceRoleA5C4F5B4",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "9709438d0fbb508ea9bfee8683a274b4f9492f5e527eb28e0bd9e2bc96b9a08f.zip",
+          "S3Key": "be7d56b509650f7f97c406a745d8335992726086995e4cb4aaf50417ab40e803.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -8642,20 +6532,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::Lambda::Function",
     },
     "rootmailsesreceiptrulesetactivationprovideroneventhandlerLogRetentionFD6A9185": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "LogGroupName": {
           "Fn::Join": [
@@ -8683,20 +6559,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
         "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRoleDefaultPolicy64767BAC",
         "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRole069EB2EA",
       ],
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "DefinitionString": {
           "Fn::Join": [
@@ -8730,20 +6592,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::StepFunctions::StateMachine",
     },
     "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRole069EB2EA": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -8761,20 +6609,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::IAM::Role",
     },
     "rootmailsesreceiptrulesetactivationproviderwaiterstatemachineRoleDefaultPolicy64767BAC": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok for the provider as the function has restrictions",
-            },
-          ],
-        },
-      },
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -8844,20 +6678,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
     },
     "testRootmailEmailBucket2A470446": {
       "DeletionPolicy": "Retain",
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-S1",
-              "reason": "no server access logs needed",
-            },
-            {
-              "id": "AwsSolutions-S10",
-              "reason": "no SSL access needed",
-            },
-          ],
-        },
-      },
       "Properties": {
         "BucketEncryption": {
           "ServerSideEncryptionConfiguration": [
@@ -8879,16 +6699,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "UpdateReplacePolicy": "Retain",
     },
     "testRootmailEmailBucketPolicy5DA39984": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-S10",
-              "reason": "no SSL access needed",
-            },
-          ],
-        },
-      },
       "Properties": {
         "Bucket": {
           "Ref": "testRootmailEmailBucket2A470446",
@@ -9203,20 +7013,6 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Type": "AWS::SSM::Parameter",
     },
     "testRootmailSESReceiveOpsSantaFunctionRole82D7297F": {
-      "Metadata": {
-        "cdk_nag": {
-          "rules_to_suppress": [
-            {
-              "id": "AwsSolutions-IAM4",
-              "reason": "no service role restriction needed",
-            },
-            {
-              "id": "AwsSolutions-IAM5",
-              "reason": "wildcards are ok as we allow every opsitem to be created",
-            },
-          ],
-        },
-      },
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -9328,7 +7124,7 @@ exports[`rootmail-autoDns rootmail-no-autoDNSEnable 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-us-east-1",
-          "S3Key": "02c6255fbff7f38c697f1941c43745b0e6c01a6367b1c1fc13c740fccd90af13.zip",
+          "S3Key": "c230c2016460571997768062e1b186b36b3d9a636a78efd39e3c228dacbcf811.zip",
         },
         "Environment": {
           "Variables": {

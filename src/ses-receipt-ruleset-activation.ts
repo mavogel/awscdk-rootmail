@@ -5,10 +5,10 @@ import {
   aws_iam as iam,
   aws_lambda as lambda,
   aws_s3 as s3,
+  Validations,
 } from 'aws-cdk-lib';
 import { NodejsFunction } from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as cr from 'aws-cdk-lib/custom-resources';
-import { NagSuppressions } from 'cdk-nag';
 import { Construct, Node } from 'constructs';
 import {
   PROP_DOMAIN,
@@ -110,17 +110,21 @@ class SESReceiptRuleSetActivationProvider extends Construct {
       totalTimeout: Duration.minutes(2), // TODO: make this configurable
       logRetention: 1,
     });
-    NagSuppressions.addResourceSuppressions(
-      [
-        this.provider,
-        this.provider.onEventHandler,
-        this.provider.onEventHandler.role!,
-        this.provider.isCompleteHandler!,
-        this.provider.isCompleteHandler!.role!,
-      ],
-      [
-        { id: 'AwsSolutions-IAM4', reason: 'no service role restriction needed' },
-        { id: 'AwsSolutions-IAM5', reason: 'wildcards are ok for the provider as the function has restrictions' },
-      ], true);
+    // Granular findings only. Portable IDs only: Resource::* is constant across any deployment,
+    // Resource::<logical-id> findings are not. AwsSolutions-IAM4[Policy::...] cannot be
+    // acknowledged at all right now - aws-cdk-lib's Validations.acknowledge() rejects any id with
+    // more than one '::', and AWS managed policy ARNs always contain one (cdklabs/cdk-nag#2359,
+    // #2351, both open upstream). See docs/plans/2026-08-09-bump-mvc-projen-cdk-nag-v3.md Task 3.
+    // onEventHandlerFuncRole is acknowledged directly (not via this.provider.onEventHandler) since
+    // it is passed in as an explicit role - a sibling construct, not a descendant of the Function.
+    const iam5ResourceStar = 'AwsSolutions-IAM5[Resource::*]';
+    const reasonIam5 = 'wildcards are ok for the provider as the function has restrictions';
+
+    Validations.of(onEventHandlerFuncRole).acknowledge({ id: iam5ResourceStar, reason: reasonIam5 });
+    // emailbucket.grantRead(isCompleteHandlerFunc, 'RootMail/*') generates wildcard-action findings
+    // (literal action strings, portable across any deployment).
+    for (const action of ['s3:GetBucket*', 's3:GetObject*', 's3:List*']) {
+      Validations.of(isCompleteHandlerFunc).acknowledge({ id: `AwsSolutions-IAM5[Action::${action}]`, reason: 'scoped read access to the RootMail prefix, wildcard is the S3 action-family suffix' });
+    }
   }
 }
