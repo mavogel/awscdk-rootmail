@@ -27,7 +27,7 @@ const fullDomain = `${testSubdomain}.${testDomain}`;
 const customSesReceiveFunction = new NodejsFunction(stackUnderTest, 'custom-ses-receive-function', {
   functionName: PhysicalName.GENERATE_IF_NEEDED,
   entry: path.join(__dirname, 'functions', 'custom-ses-receive-function.ts'),
-  runtime: lambda.Runtime.NODEJS_18_X,
+  runtime: lambda.Runtime.NODEJS_24_X,
   logRetention: 1,
   timeout: Duration.seconds(30),
 });
@@ -79,7 +79,7 @@ const integ = new IntegTest(app, integStackName, {
 const sendEmailHandler = new NodejsFunction(stackUnderTest, 'send-email-handler', {
   functionName: PhysicalName.GENERATE_IF_NEEDED,
   entry: path.join(__dirname, 'functions', 'send-email-handler.ts'),
-  runtime: lambda.Runtime.NODEJS_18_X,
+  runtime: lambda.Runtime.NODEJS_24_X,
   logRetention: 1,
   timeout: Duration.seconds(30),
   initialPolicy: [

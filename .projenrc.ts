@@ -5,7 +5,7 @@ import { NpmAccess } from 'projen/lib/javascript';
 const project = new MvcCdkConstructLibrary({
   author: 'Manuel Vogel',
   authorAddress: '8409778+mavogel@users.noreply.github.com',
-  cdkVersion: '2.243.0',
+  cdkVersion: '2.263.0',
   defaultReleaseBranch: 'main',
   jsiiVersion: '~5.9.0',
   name: '@mavogel/awscdk-rootmail',
@@ -21,7 +21,7 @@ const project = new MvcCdkConstructLibrary({
   },
   deps: [
     '@mavogel/mvc-projen',
-    'constructs@^10.4.2',
+    'constructs@^10.5.1',
   ],
 
   bundledDeps: [

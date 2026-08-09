@@ -7,10 +7,10 @@ import {
   aws_lambda as lambda,
   aws_ssm as ssm,
   Stack,
+  Validations,
 } from 'aws-cdk-lib';
 import { NodejsFunction } from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as cr from 'aws-cdk-lib/custom-resources';
-import { NagSuppressions } from 'cdk-nag';
 import { Construct, Node } from 'constructs';
 import {
   PROP_DOMAIN,
@@ -110,7 +110,7 @@ class RootmailAutowireDnsProvider extends Construct {
     super(scope, id);
 
     const isCompleteHandlerFunc = new NodejsFunction(this, 'is-complete-handler', {
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_24_X,
       timeout: Duration.seconds(120),
       logRetention: 1,
     });
@@ -129,7 +129,7 @@ class RootmailAutowireDnsProvider extends Construct {
     props.autoWireR53ChangeInfoIdParameter.grantRead(isCompleteHandlerFunc);
 
     const onEventHandlerFunc = new NodejsFunction(this, 'on-event-handler', {
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_24_X,
       timeout: Duration.seconds(160), // 2m40s
       logRetention: 1,
       environment: {},
@@ -183,17 +183,15 @@ class RootmailAutowireDnsProvider extends Construct {
       onEventHandler: onEventHandlerFunc,
       logRetention: 1,
     });
-    NagSuppressions.addResourceSuppressions(
-      [
-        this.provider,
-        this.provider.onEventHandler!,
-        this.provider.onEventHandler.role!,
-        this.provider.isCompleteHandler!,
-        this.provider.isCompleteHandler!.role!,
-      ],
-      [
-        { id: 'AwsSolutions-IAM4', reason: 'no service role restriction needed' },
-        { id: 'AwsSolutions-IAM5', reason: 'wildcards are ok for the provider as the function has restrictions' },
-      ], true);
+    // Granular findings only. Portable IDs only: Resource::* is constant across any deployment,
+    // Resource::<logical-id> findings are not. AwsSolutions-IAM4[Policy::...] cannot be
+    // acknowledged at all right now - aws-cdk-lib's Validations.acknowledge() rejects any id with
+    // more than one '::', and AWS managed policy ARNs always contain one (cdklabs/cdk-nag#2359,
+    // #2351, both open upstream). See docs/plans/2026-08-09-bump-mvc-projen-cdk-nag-v3.md Task 3.
+    const iam5ResourceStar = 'AwsSolutions-IAM5[Resource::*]';
+    const reasonIam5 = 'wildcards are ok for the provider as the function has restrictions';
+
+    Validations.of(this.provider.onEventHandler!).acknowledge({ id: iam5ResourceStar, reason: reasonIam5 });
+    Validations.of(this.provider.isCompleteHandler!).acknowledge({ id: iam5ResourceStar, reason: reasonIam5 });
   };
 }

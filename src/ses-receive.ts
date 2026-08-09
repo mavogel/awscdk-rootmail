@@ -10,9 +10,9 @@ import {
   aws_iam as iam,
   aws_lambda as lambda,
   aws_s3 as s3,
+  Validations,
 } from 'aws-cdk-lib';
 import { NodejsFunction } from 'aws-cdk-lib/aws-lambda-nodejs';
-import { NagSuppressions } from 'cdk-nag';
 import { Construct, IConstruct } from 'constructs';
 import { isSESEnabledRegion, sesEnabledRegions } from './common';
 import { SESReceiptRuleSetActivation } from './ses-receipt-ruleset-activation';
@@ -124,14 +124,15 @@ export class SESReceive extends Construct {
         }),
       },
     });
-    NagSuppressions.addResourceSuppressions(
-      [
-        opsSantaFunctionRole,
-      ],
-      [
-        { id: 'AwsSolutions-IAM4', reason: 'no service role restriction needed' },
-        { id: 'AwsSolutions-IAM5', reason: 'wildcards are ok as we allow every opsitem to be created' },
-      ], true);
+    // Portable findings only: Resource::* is constant across any deployment. Resource::<logical-id>
+    // findings (from the s3:GetObject and ssm:PutParameter statements above) are NOT acknowledged
+    // here - cdk-nag v3 matches those by exact string including a per-app-generated logical ID /
+    // literal account+region, so a value harvested from this test would not match a consumer's
+    // deployment. AwsSolutions-IAM4[Policy::...] cannot be acknowledged at all right now - aws-cdk-lib's
+    // Validations.acknowledge() rejects any id with more than one '::', and AWS managed policy ARNs
+    // always contain one (cdklabs/cdk-nag#2359, #2351, both open upstream). See
+    // docs/plans/2026-08-09-bump-mvc-projen-cdk-nag-v3.md Task 3.
+    Validations.of(opsSantaFunctionRole).acknowledge({ id: 'AwsSolutions-IAM5[Resource::*]', reason: 'wildcards are ok as we allow every opsitem to be created' });
 
     let opsSantaFunction: lambda.Function;
     if (props.customSesReceiveFunction) {
@@ -155,7 +156,7 @@ export class SESReceive extends Construct {
       opsSantaFunction = new NodejsFunction(this, 'ops-santa-handler', {
         handler: 'handler',
         role: opsSantaFunctionRole,
-        runtime: lambda.Runtime.NODEJS_18_X,
+        runtime: lambda.Runtime.NODEJS_24_X,
         timeout: Duration.seconds(60),
         logRetention: 3,
         environment: {
