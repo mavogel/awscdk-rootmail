@@ -1,8 +1,8 @@
-![Source](https://img.shields.io/github/stars/MV-Consulting/awscdk-rootmail?logo=github&label=GitHub%20Stars)
-[![Build Status](https://github.com/MV-Consulting/awscdk-rootmail/actions/workflows/build.yml/badge.svg)](https://github.com/MV-Consulting/awscdk-rootmail/actions/workflows/build.yml)
+![Source](https://img.shields.io/github/stars/mavogel/awscdk-rootmail?logo=github&label=GitHub%20Stars)
+[![Build Status](https://github.com/mavogel/awscdk-rootmail/actions/workflows/build.yml/badge.svg)](https://github.com/mavogel/awscdk-rootmail/actions/workflows/build.yml)
 [![ESLint Code Formatting](https://img.shields.io/badge/code_style-eslint-brightgreen.svg)](https://eslint.org)
-[![Latest release](https://img.shields.io/github/release/MV-Consulting/awscdk-rootmail.svg)](https://github.com/MV-Consulting/awscdk-rootmail/releases)
-![GitHub](https://img.shields.io/github/license/MV-Consulting/awscdk-rootmail)
+[![Latest release](https://img.shields.io/github/release/mavogel/awscdk-rootmail.svg)](https://github.com/mavogel/awscdk-rootmail/releases)
+![GitHub](https://img.shields.io/github/license/mavogel/awscdk-rootmail)
 [![npm](https://img.shields.io/npm/dt/@mavogel/awscdk-rootmail?label=npm&color=orange)](https://www.npmjs.com/package/@mavogel/awscdk-rootmail)
 [![typescript](https://img.shields.io/badge/jsii-typescript-blueviolet.svg)](https://www.npmjs.com/package/@mavogel/cdk-vscode-server)
 
@@ -32,7 +32,7 @@ Feel free to take a look at the design
 
 Install the dependencies:
 ```sh
-brew install aws-cli node@18 esbuild
+brew install aws-cli node@24 esbuild
 ```
 
 You can chose via embedding the construct in your cdk-app or use is directly via Cloudformation.
