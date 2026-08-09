@@ -53,7 +53,7 @@ describe('ses-receive-stack', () => {
 
     const customSesReceiveFunction = new NodejsFunction(stack, 'custom-ses-receive-function', {
       entry: path.join(__dirname, 'functions/custom-ses-receive-function.ts'),
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_24_X,
       logRetention: 1,
       timeout: Duration.seconds(30),
     });

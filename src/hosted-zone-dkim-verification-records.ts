@@ -54,7 +54,7 @@ class HostedZoneDKIMAndVerificationRecordsProvider extends Construct {
     super(scope, id);
 
     const onEventHandlerFunc = new NodejsFunction(this, 'on-event-handler', {
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_24_X,
       logRetention: 1,
       timeout: Duration.seconds(200),
     });

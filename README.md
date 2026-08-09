@@ -145,7 +145,7 @@ and you create a separate `NodejsFunction` as follows with the additionally need
 const customSesReceiveFunction = new NodejsFunction(stackUnderTest, 'custom-ses-receive-function', {
   functionName: PhysicalName.GENERATE_IF_NEEDED,
   entry: path.join(__dirname, 'functions', 'custom-ses-receive-function.ts'),
-  runtime: lambda.Runtime.NODEJS_18_X,
+  runtime: lambda.Runtime.NODEJS_24_X,
   logRetention: 1,
   timeout: Duration.seconds(30),
 });

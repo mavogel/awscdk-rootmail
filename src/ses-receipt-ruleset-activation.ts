@@ -86,7 +86,7 @@ class SESReceiptRuleSetActivationProvider extends Construct {
     );
 
     const onEventHandlerFunc = new NodejsFunction(this, 'on-event-handler', {
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_24_X,
       logRetention: 1,
       role: onEventHandlerFuncRole,
       timeout: Duration.seconds(30),
@@ -95,7 +95,7 @@ class SESReceiptRuleSetActivationProvider extends Construct {
     });
 
     const isCompleteHandlerFunc = new NodejsFunction(this, 'is-complete-handler', {
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_24_X,
       logRetention: 1,
       timeout: Duration.seconds(30),
       //  Note: we use the resource properties from above as it is a CustomResource

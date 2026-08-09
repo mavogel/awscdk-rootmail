@@ -53,7 +53,7 @@ class HostedZoneDKIMPropagationProvider extends Construct {
     super(scope, id);
 
     const isCompleteHandlerFunc = new NodejsFunction(this, 'is-complete-handler', {
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_24_X,
       logRetention: 1,
       timeout: Duration.seconds(30),
     });
@@ -72,7 +72,7 @@ class HostedZoneDKIMPropagationProvider extends Construct {
     );
 
     const onEventHandlerFunc = new NodejsFunction(this, 'on-event-handler', {
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_24_X,
       logRetention: 1,
       timeout: Duration.seconds(10),
     });

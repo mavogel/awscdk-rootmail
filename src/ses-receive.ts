@@ -156,7 +156,7 @@ export class SESReceive extends Construct {
       opsSantaFunction = new NodejsFunction(this, 'ops-santa-handler', {
         handler: 'handler',
         role: opsSantaFunctionRole,
-        runtime: lambda.Runtime.NODEJS_18_X,
+        runtime: lambda.Runtime.NODEJS_24_X,
         timeout: Duration.seconds(60),
         logRetention: 3,
         environment: {

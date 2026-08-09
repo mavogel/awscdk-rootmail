@@ -110,7 +110,7 @@ class RootmailAutowireDnsProvider extends Construct {
     super(scope, id);
 
     const isCompleteHandlerFunc = new NodejsFunction(this, 'is-complete-handler', {
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_24_X,
       timeout: Duration.seconds(120),
       logRetention: 1,
     });
@@ -129,7 +129,7 @@ class RootmailAutowireDnsProvider extends Construct {
     props.autoWireR53ChangeInfoIdParameter.grantRead(isCompleteHandlerFunc);
 
     const onEventHandlerFunc = new NodejsFunction(this, 'on-event-handler', {
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_24_X,
       timeout: Duration.seconds(160), // 2m40s
       logRetention: 1,
       environment: {},
