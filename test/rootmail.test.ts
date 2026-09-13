@@ -5,6 +5,7 @@ import {
 import { Template } from 'aws-cdk-lib/assertions';
 import { AwsSolutionsChecks } from 'cdk-nag';
 import { Rootmail, RootmailProps } from '../src';
+import { normalizeAssetHashes } from './template-utils';
 
 describe('rootmail-autoDns', () => {
   test('rootmail-no-autoDNSEnable', () => {
@@ -23,7 +24,7 @@ describe('rootmail-autoDns', () => {
     new Rootmail(stack, 'testRootmail', testProps);
 
     const template = Template.fromStack(stack);
-    expect(template.toJSON()).toMatchSnapshot();
+    expect(normalizeAssetHashes(template.toJSON())).toMatchSnapshot();
   });
 
   test('rootmail-create-with-autoDNSEnable', () => {
@@ -43,7 +44,7 @@ describe('rootmail-autoDns', () => {
     new Rootmail(stack, 'testRootmail', testProps);
 
     const template = Template.fromStack(stack);
-    expect(template.toJSON()).toMatchSnapshot();
+    expect(normalizeAssetHashes(template.toJSON())).toMatchSnapshot();
   });
 });
 
