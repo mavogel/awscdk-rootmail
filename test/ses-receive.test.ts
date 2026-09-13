@@ -9,6 +9,7 @@ import {
 import { Template } from 'aws-cdk-lib/assertions';
 import { NodejsFunction } from 'aws-cdk-lib/aws-lambda-nodejs';
 import { SESReceive, SESReceiveProps } from '../src';
+import { normalizeAssetHashes } from './template-utils';
 
 describe('ses-receive-stack', () => {
   test('ses-receive-stack-create', () => {
@@ -34,7 +35,7 @@ describe('ses-receive-stack', () => {
     new SESReceive(stack, 'testSesReceive', testProps);
 
     const template = Template.fromStack(stack);
-    expect(template.toJSON()).toMatchSnapshot();
+    expect(normalizeAssetHashes(template.toJSON())).toMatchSnapshot();
   });
 
   test('ses-receive-stack-custom-ses', () => {
@@ -68,6 +69,6 @@ describe('ses-receive-stack', () => {
     new SESReceive(stack, 'testSesReceiveCustomFunc', testProps);
 
     const template = Template.fromStack(stack);
-    expect(template.toJSON()).toMatchSnapshot();
+    expect(normalizeAssetHashes(template.toJSON())).toMatchSnapshot();
   });
 });
