@@ -732,7 +732,7 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "78b64aaf9aebb4eacbdd42197be10e9d5894360a642f7dcf79aeb84bb3552377.zip",
+          "S3Key": "7144c5a47b3904b1aa4b27be73803a4b684f4ef765d9df8fa767779d37106254.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -854,7 +854,7 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "be7d56b509650f7f97c406a745d8335992726086995e4cb4aaf50417ab40e803.zip",
+          "S3Key": "9709438d0fbb508ea9bfee8683a274b4f9492f5e527eb28e0bd9e2bc96b9a08f.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -1125,7 +1125,7 @@ exports[`ses-receive-stack ses-receive-stack-create 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "2c2c04e0c9a93a221e10ba30b9fd715c77d8060aceb2bdfa756aa791e9a5bbd8.zip",
+          "S3Key": "d6e42471b5fa003808242513919bb3a67cb86f10669e305b20254ff14a2e1fd4.zip",
         },
         "Environment": {
           "Variables": {
@@ -1330,7 +1330,7 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "29efbee39ed4018f32b70cdaa8e5a45cfabf8f12742fe03b7f25725e33532c1c.zip",
+          "S3Key": "a752c5f89f5aacbf259751764f1995377c69cb20fb221a539482e1dcbfc829b2.zip",
         },
         "Environment": {
           "Variables": {
@@ -2056,7 +2056,7 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "78b64aaf9aebb4eacbdd42197be10e9d5894360a642f7dcf79aeb84bb3552377.zip",
+          "S3Key": "7144c5a47b3904b1aa4b27be73803a4b684f4ef765d9df8fa767779d37106254.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -2178,7 +2178,7 @@ exports[`ses-receive-stack ses-receive-stack-custom-ses 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-1234-eu-west-1",
-          "S3Key": "be7d56b509650f7f97c406a745d8335992726086995e4cb4aaf50417ab40e803.zip",
+          "S3Key": "9709438d0fbb508ea9bfee8683a274b4f9492f5e527eb28e0bd9e2bc96b9a08f.zip",
         },
         "Handler": "index.handler",
         "Role": {
