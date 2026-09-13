@@ -22,5 +22,13 @@ pull_request_rules:
       - -label~=(do-not-merge)
       - status-success=build
       - status-success=package-js
+  - name: Auto-approve self-authored mvc-bot PRs
+    conditions:
+      - author=mvc-bot
+      - label=auto-approve
+    actions:
+      review:
+        type: APPROVE
+        message: "Automatically approved: self-authored automation PR."
 merge_queue:
   max_parallel_checks: 1
