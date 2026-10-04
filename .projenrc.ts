@@ -24,7 +24,11 @@ const project = new MvcCdkConstructLibrary({
     },
   },
   deps: [
-    '@mavogel/mvc-projen@^0.0.37',
+    // Deliberately unversioned: projen treats a dep with an explicit version as
+    // pinned - it lands in renovate's `ignoreDeps` and is only reachable through
+    // `npm update`, which can never leave a 0.0.x caret range (^0.0.37 == 0.0.37).
+    // Left unversioned, upgrade-main (npm-check-updates) and Renovate both bump it.
+    '@mavogel/mvc-projen',
     'constructs@^10.5.1',
   ],
   // `@mavogel/mvc-projen` pins its own `projen` dependency (peer ^0.103.20).
@@ -36,9 +40,40 @@ const project = new MvcCdkConstructLibrary({
   // for the same issue.
   projenVersion: '^0.103.20',
   // Exclude `projen` from auto-upgrade so it stays aligned with mvc-projen's
-  // pin; bump it deliberately alongside a `@mavogel/mvc-projen` version bump.
+  // pin; if an automated mvc-projen bump raises that pin, bump `projen` in the
+  // same PR.
   depsUpgradeOptions: {
     exclude: ['projen'],
+    // The upgrade-main PR is opened as 'mvc-bot' via PROJEN_GITHUB_TOKEN, so
+    // it relies on the Mergify rule that auto-approves 'author=mvc-bot' PRs
+    // carrying this label.
+    workflowOptions: {
+      labels: ['auto-approve'],
+    },
+  },
+  // Renovate instead of Dependabot: Dependabot runs with `lockfile-only`, so it
+  // can never move a 0.0.x caret range such as mvc-projen's.
+  dependabot: false,
+  renovatebot: true,
+  renovatebotOptions: {
+    labels: ['dependencies', 'auto-approve'],
+    ignore: ['aws-cdk-lib', 'aws-cdk', 'projen'],
+    // Keeps the 7-day cooldown the previous Dependabot config had.
+    minimumReleaseAge: '7 days',
+    overrideConfig: {
+      extends: ['config:recommended', ':preserveSemverRanges'],
+      platformAutomerge: true,
+      packageRules: [
+        {
+          matchManagers: ['npm'],
+          groupName: 'default',
+          // Negations only: Renovate rejects '*' combined with other patterns
+          // ("config-validation"), which silently halts all updates.
+          matchPackageNames: ['!aws-cdk*', '!projen'],
+          automerge: true,
+        },
+      ],
+    },
   },
 
   bundledDeps: [

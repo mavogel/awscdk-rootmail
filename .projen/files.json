@@ -3,7 +3,6 @@
     ".commitlintrc.js",
     ".eslintrc.json",
     ".gitattributes",
-    ".github/dependabot.yml",
     ".github/FUNDING.yaml",
     ".github/ISSUE_TEMPLATE/bug_report.md",
     ".github/ISSUE_TEMPLATE/feature_request.md",
@@ -12,6 +11,7 @@
     ".github/workflows/build.yml",
     ".github/workflows/pull-request-lint.yml",
     ".github/workflows/release.yml",
+    ".github/workflows/upgrade-main.yml",
     ".github/zizmor.yml",
     ".gitignore",
     ".mergify.yml",
@@ -22,6 +22,7 @@
     "CONTRIBUTING.md",
     "LICENSE",
     "projenrc/tsconfig.json",
+    "renovate.json5",
     "test/tsconfig.json",
     "tsconfig.json"
   ],

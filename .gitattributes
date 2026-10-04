@@ -5,7 +5,6 @@
 /.commitlintrc.js linguist-generated
 /.eslintrc.json linguist-generated linguist-language=JSON-with-Comments
 /.gitattributes linguist-generated
-/.github/dependabot.yml linguist-generated
 /.github/FUNDING.yaml linguist-generated
 /.github/ISSUE_TEMPLATE/bug_report.md linguist-generated
 /.github/ISSUE_TEMPLATE/feature_request.md linguist-generated
@@ -14,6 +13,7 @@
 /.github/workflows/build.yml linguist-generated
 /.github/workflows/pull-request-lint.yml linguist-generated
 /.github/workflows/release.yml linguist-generated
+/.github/workflows/upgrade-main.yml linguist-generated
 /.github/zizmor.yml linguist-generated
 /.gitignore linguist-generated
 /.mergify.yml linguist-generated
@@ -29,5 +29,6 @@
 /package-lock.json linguist-generated
 /package.json linguist-generated
 /projenrc/tsconfig.json linguist-generated linguist-language=JSON-with-Comments
+/renovate.json5 linguist-generated linguist-language=JSON-with-Comments
 /test/tsconfig.json linguist-generated linguist-language=JSON-with-Comments
 /tsconfig.json linguist-generated
