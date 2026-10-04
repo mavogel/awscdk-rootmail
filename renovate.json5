@@ -48,6 +48,7 @@
     "constructs",
     "cdk-nag",
     "aws-cdk",
+    "@mavogel/mvc-projen",
     "actions/checkout",
     "actions/setup-node",
     "actions/upload-artifact",
