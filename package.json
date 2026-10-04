@@ -83,7 +83,7 @@
     "@aws-sdk/client-s3": "^3.1083.0",
     "@aws-sdk/client-ses": "^3.1083.0",
     "@aws-sdk/client-ssm": "^3.1083.0",
-    "@mavogel/mvc-projen": "^0.0.37",
+    "@mavogel/mvc-projen": "^0.0.46",
     "cdk-nag": "^3.0.1",
     "constructs": "^10.5.1",
     "mailparser": "^3.9.14",
