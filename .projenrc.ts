@@ -102,6 +102,16 @@ const project = new MvcCdkConstructLibrary({
     'husky',
     'jsonfile',
   ],
+  // `he` >= 2 (pulled in by mailparser) is ESM-only and Jest loads tests as
+  // CommonJS, so compile it through ts-jest instead of pinning it to 1.x.
+  jestOptions: {
+    jestConfig: {
+      transformIgnorePatterns: ['/node_modules/(?!he/)'],
+      transform: {
+        '^.+\\.mjs$': new javascript.Transform('ts-jest', { tsconfig: { allowJs: true, module: 'commonjs', esModuleInterop: true } }),
+      },
+    },
+  },
   gitignore: [
     'venv',
     'cdk.out',
