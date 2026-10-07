@@ -78,11 +78,11 @@
     "constructs": "^10.5.1"
   },
   "dependencies": {
-    "@aws-sdk/client-cloudwatch-logs": "^3.1146.0",
-    "@aws-sdk/client-route-53": "^3.1146.0",
-    "@aws-sdk/client-s3": "^3.1146.0",
-    "@aws-sdk/client-ses": "^3.1146.0",
-    "@aws-sdk/client-ssm": "^3.1146.0",
+    "@aws-sdk/client-cloudwatch-logs": "^3.1147.0",
+    "@aws-sdk/client-route-53": "^3.1147.0",
+    "@aws-sdk/client-s3": "^3.1147.0",
+    "@aws-sdk/client-ses": "^3.1147.0",
+    "@aws-sdk/client-ssm": "^3.1147.0",
     "@mavogel/mvc-projen": "^0.0.53",
     "cdk-nag": "^3.0.1",
     "constructs": "^10.5.1",
