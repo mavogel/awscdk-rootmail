@@ -15,6 +15,8 @@ const project = new MvcCdkConstructLibrary({
   cdkVersion: '2.263.0',
   defaultReleaseBranch: 'main',
   jsiiVersion: '~5.9.0',
+  workflowNodeVersion: '26.x',
+  minNodeVersion: '26.x',
   name: '@mavogel/awscdk-rootmail',
   projenrcTs: true,
   npmTrustedPublishing: true,
