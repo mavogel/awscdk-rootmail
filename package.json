@@ -87,7 +87,7 @@
     "@mavogel/mvc-projen": "^0.0.76",
     "cdk-nag": "^3.0.1",
     "constructs": "^10.5.1",
-    "mailparser": "^3.14.3",
+    "mailparser": "^3.14.4",
     "uuid": "^14.0.3"
   },
   "bundledDependencies": [
