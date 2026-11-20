@@ -4,6 +4,8 @@
 
 ### Rootmail <a name="Rootmail" id="@mavogel/awscdk-rootmail.Rootmail"></a>
 
+- *Implements:* constructs.IConstruct, constructs.IDependable
+
 Rootmail construct.
 
 #### Initializers <a name="Initializers" id="@mavogel/awscdk-rootmail.Rootmail.Initializer"></a>
@@ -166,6 +168,8 @@ The name parameter in SSM to store the domain name server.
 
 
 ### SESReceive <a name="SESReceive" id="@mavogel/awscdk-rootmail.SESReceive"></a>
+
+- *Implements:* constructs.IConstruct, constructs.IDependable
 
 SES Receive construct.
 
